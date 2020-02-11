@@ -1,16 +1,25 @@
 import colors from 'vuetify/es5/util/colors'
+import data from './static/elections.js'
 
 export default {
   mode: 'universal',
-  // Se ajusta para el deploy, mantener comentado en desarrollo
+  // // Se ajusta para el deploy, mantener comentado en desarrollo
   // router: {
   //   base: '/prueba-ciudadania-inteligente/dist/'
+  // },
+  // // Genera rutas para pre renderizado
+  // generate: {
+  //    routes () {
+  //     return data.map((election) => {
+  //       return '/elections/' + election.slug
+  //     })
+  //   }
   // },
   /*
   ** Headers of the page
   */
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
+    titleTemplate: 'Prueba Ciudadania Inteligente',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },

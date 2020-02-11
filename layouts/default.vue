@@ -5,6 +5,24 @@
       fixed
       app
     >
+      <v-container>
+        <v-row justify="center" align="center">
+          <h1 class="text-center">
+            hey
+          </h1>
+          <v-spacer />
+          <v-btn
+            class="mx-2"
+            to="/"
+            rounded
+            color="orange"
+          >
+            <span class="white--text">
+              Home
+            </span>
+          </v-btn>
+        </v-row>
+      </v-container>
     </v-app-bar>
     <v-content>
       <v-container>
