@@ -1,88 +1,63 @@
 <template>
-  <v-layout
-    column
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm8
-      md6
-    >
-      <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
-        <v-card-text>
-          <p>Vuetify is a progressive Material Design component framework for Vue.js. It was designed to empower developers to create amazing applications.</p>
-          <p>
-            For more information on Vuetify, check out the <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-            >
-              documentation
-            </a>.
-          </p>
-          <p>
-            If you have questions, please join the official <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              title="chat"
-            >
-              discord
-            </a>.
-          </p>
-          <p>
-            Find a bug? Report it on the github <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              title="contribute"
-            >
-              issue board
-            </a>.
-          </p>
-          <p>Thank you for developing with Vuetify and I look forward to bringing more exciting features in the future.</p>
-          <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
-          </div>
-          <hr class="my-3">
-          <a
-            href="https://nuxtjs.org/"
-            target="_blank"
-          >
-            Nuxt Documentation
-          </a>
-          <br>
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-          >
-            Nuxt GitHub
-          </a>
-        </v-card-text>
-        <v-card-actions>
-          <v-spacer />
-          <v-btn
-            color="primary"
-            nuxt
-            to="/elections"
-          >
-            Continue
-          </v-btn>
-        </v-card-actions>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <v-container>
+    <v-row justify="center">
+      <v-col cols="12" md="9">
+        <v-card class="pa-5">
+          <v-card-title class="display-2">
+            Buen dia chicxs,
+          </v-card-title>
+          <v-card-text class="title">
+            <p>Mi nombre es <strong>  Enrique Peña</strong>, soy politologo y desarrollador colombiano, vivo y trabajo en CDMX. Son pocas las veces que veo una oferta laboral y digo "esa es para mi", me paso con ustedes 😅. Espero que mi prueba sea de su agrado....</p>
+            <v-divider class="py-3" />
+            <p class="subtitle-1 ">
+              Uds. solicitaban  un desarrollo que pudiese cumplir las funciones de <strong>Jekyll</strong>, por lo cual opte por una tecnologia de pre-renderizado llamada Nuxt.js y su comando <strong>nuxt generate</strong>, a partir de Node.js me es posible renderizar desde el back-end y layouts un sitio web completamente estatico y SEO-friendly.
+            </p>
+            <p class="subtitle-1 ">
+              Igualmente, fue solicitada una alternativa que cumpliera la función de una coleccion de Jekyll, para lo cual opte por nutrir el sistema a partir de un archivo JSON con la información de las elecciones con el siguiente esquema:
+            </p>
+            <v-img
+              :src="require('@/assets/code.png')"
+            />
+            <a class="subtitle-1 text-end" href="https://github.com/enpepolicy/prueba-ciudadania-inteligente/blob/master/static/elections.js" target="_blank"> Json completo acá</a>
+            <p class="body-2 text-right pt-6">
+              Como vi que el diseño no seria evaluado, no le meti mucho. <br>No obstante, me siento comodo en el front tambien. <br>(Disculpen los typos y tildes, no les hice revisión de redacción rigurosa.)
+            </p>
+          </v-card-text>
+          <v-card-actions>
+            <v-row justify="center">
+              <v-btn
+                x-large
+                color="primary"
+                nuxt
+                to="/elections"
+              >
+                Ver Prueba
+              </v-btn>
+            </v-row>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-// import Logo from '@/components/Logo.vue'
-// import VuetifyLogo from '@/components/VuetifyLogo.vue'
 
 export default {
   components: {
-    // Logo,
-    // VuetifyLogo
   }
 }
 </script>
+<style lang="scss">
+code{
+  border-radius: 0;
+  background-color: white;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  margin: 1em
+}
+.caption-2{
+  font-size: 0.8em
+}
+
+</style>

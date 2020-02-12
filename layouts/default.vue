@@ -8,9 +8,20 @@
       <v-container>
         <v-row justify="center" align="center">
           <h1 class="text-center">
-            hey
+            Prueba Enrique Peña ✊
           </h1>
           <v-spacer />
+          <v-btn
+            href="https://github.com/enpepolicy/prueba-ciudadania-inteligente"
+            target="_blank"
+            class="mx-2"
+            rounded
+            color="blue"
+          >
+            <span class="white--text">
+              Repo
+            </span>
+          </v-btn>
           <v-btn
             class="mx-2"
             to="/"
@@ -18,7 +29,7 @@
             color="orange"
           >
             <span class="white--text">
-              Home
+              Leanme
             </span>
           </v-btn>
         </v-row>

@@ -3,18 +3,18 @@ import data from './static/elections.js'
 
 export default {
   mode: 'universal',
-  // // Se ajusta para el deploy, mantener comentado en desarrollo
-  // router: {
-  //   base: '/prueba-ciudadania-inteligente/dist/'
-  // },
-  // // Genera rutas para pre renderizado
-  // generate: {
-  //    routes () {
-  //     return data.map((election) => {
-  //       return '/elections/' + election.slug
-  //     })
-  //   }
-  // },
+  // Se ajusta para el deploy, mantener comentado en desarrollo
+  router: {
+    base: '/prueba-ciudadania-inteligente/'
+  },
+  // Genera rutas para pre renderizado
+  generate: {
+    routes () {
+      return data.map((election) => {
+        return '/elections/' + election.slug
+      })
+    }
+  },
   /*
   ** Headers of the page
   */
